@@ -1,4 +1,4 @@
-name: Backend - Manual Production Build
+name: Production Build & Push - Manual
 
 on:
   workflow_dispatch:
