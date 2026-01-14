@@ -76,7 +76,7 @@ uv sync
 
 Available workflows in this repository:
 
-### 1. Create Release
+### 1. New Release - Manual
 
 - **File:** [.github/workflows/create-release.yml](.github/workflows/create-release.yml)
 - **Trigger:** Manual (workflow_dispatch)
@@ -87,7 +87,7 @@ Available workflows in this repository:
   - **major** - Breaking changes (e.g., 1.0.0 → 2.0.0)
 - **Uses:** `cloudsteak/cm-workflows/.github/workflows/new-release.yml@1.3.0`
 
-### 2. Backend - Manual Production Build
+### 2. Production Build & Push - Manual
 
 - **File:** [.github/workflows/prod-build.yml](.github/workflows/prod-build.yml)
 - **Trigger:** Manual (workflow_dispatch)
@@ -95,7 +95,7 @@ Available workflows in this repository:
 - **Image Name:** Uses the repository name as the image name
 - **Uses:** `cloudsteak/cm-workflows/.github/workflows/production-build-push.yml@1.3.0`
 
-### 3. Backend Staging - Build & Push
+### 3. Staging Build & Push - Automatic
 
 - **File:** [.github/workflows/staging-build.yml](.github/workflows/staging-build.yml)
 - **Trigger:** Automatic on push to `main` branch
